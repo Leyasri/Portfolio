@@ -1,0 +1,80 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1e293b;
+    color: white;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Sections layout */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect (BONUS) */
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e5e7eb;
+    font-size: 14px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    section {
+        margin: 15px;
+    }
+}
