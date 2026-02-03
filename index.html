@@ -1,98 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Leyasri's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>H Leyasri | AI/ML Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>H Leyasri</h1>
-        <img src="profile.jpg" alt="Profile Image" width="150">
-        <p>
-            I am an engineering student with a strong interest in Artificial Intelligence and Machine Learning.
-            I enjoy building practical projects, learning new technologies, and improving my problem-solving skills.
-            I am passionate about applying technology to solve real world problems and continuously growing as a developer.
-        </p>
-    </header>
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">HL</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+</nav>
 
-    <section>
-        <h2>My Skill Set</h2>
-        <ul>
-            <li>HTML</li>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Natural Language Processing</li>
-            <li>Deep Learning</li>
-            <li>Tableau</li>
-            <li>Power BI</li>
-        </ul>
-    </section>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <p class="hero-tag"><span class="dot"></span> Intern at Adversity Solutions</p>
+    <h1>H Leyasri</h1>
+    <p class="hero-desc">
+      I am an AI/ML enthusiast building practical projects, exploring emerging technologies, and solving real-world problems with code.
+    </p>
+    <a href="#projects" class="cta-btn">View My Work →</a>
+  </div>
+  <div class="hero-photo-wrapper">
+    <img src="profile.jpg" alt="H Leyasri Profile" class="hero-photo">
+  </div>
+</header>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>AuraTunes AI driven mood melodies for emotion detection</strong>
-                A smart music system that uses facial and voice recognition to suggest songs based on a person's emotion.
-            </li>
-            <li><strong>EagleEye AI:Intelligent Systems for Suspicious Activity Detection</strong>
-                Real-time employee misconduct detection model developed using YOLOv8.
-            </li>
-            <li><strong>Temperature,Humidity and Alcohol Monitoring System:</strong>
-                A real time hardware system to monitor and analyze temperature, humidity and alcohol levels.
-            </li>
-            <li><strong>SMS Spam message detection system:</strong>
-                Designed an AI-based interface that can classify whether the received message is spam or not.
-            </li>
-        </ul>
-    </section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Passionate AI/ML engineering student skilled in Python, C++, and end-to-end machine learning systems. 
+    Experienced in IoT, computer vision, NLP, and building real-world AI applications.
+  </p>
+  <div class="stats-row">
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Projects</span></div>
+    <div class="stat"><span class="stat-num">9.345</span><span class="stat-label">CGPA</span></div>
+    <div class="stat"><span class="stat-num">2</span><span class="stat-label">Awards</span></div>
+    <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Certifications</span></div>
+  </div>
+</section>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>Bachelor of Engineering</strong><br>
-        RNS Institute Of Technology<br>
-        Specialization: Artificial Intelligence & Machine Learning</p>
+<!-- EDUCATION -->
+<section id="education" class="section section--alt">
+  <h2>Academic Journey</h2>
+  <div class="timeline">
 
-        <p><strong>PUC</strong><br>
-        Oxford PU College<br>
-        Specialization: PCMC</p>
-    </section>
+    <div class="timeline-item">
+      <span class="timeline-date">2022 - Present</span>
+      <div class="timeline-content">
+        <h3>RNS Institute of Technology</h3>
+        <p>B.E in CSE (AI & ML) · Bangalore</p>
+        <span class="timeline-badge">CGPA 9.345 / 10.00</span>
+      </div>
+    </div>
 
-    <!-- NEW SECTION: Achievements -->
-    <section>
-        <h2>Achievements</h2>
-        <ul>
-            <li>Won 2nd Prize for the project Temperature, Humidity & Alcohol Monitoring System at AIDEA Event,RNSIT</li>
-            <li>Won Consolation prize for Aura Tunes AI driven mood melodies for emotion detection at the State-level project expo,BIT</li>
-        </ul>
-    </section>
+    <div class="timeline-item">
+      <span class="timeline-date">2021 - 2022</span>
+      <div class="timeline-content">
+        <h3>Oxford PU College</h3>
+        <p>Senior Secondary (PUC) · Bangalore</p>
+        <span class="timeline-badge">Marks 94.17%</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">2019 - 2020</span>
+      <div class="timeline-content">
+        <h3>Sri Vani Education Centre</h3>
+        <p>High School · Bangalore</p>
+        <span class="timeline-badge">Marks 93.8%</span>
+      </div>
+    </div>
 
-    <!-- NEW SECTION: Blog / Writing -->
-    <section>
-        <h2>Blog & Writing</h2>
-        <ul>
-            <li><a href="https://hleyasri.hashnode.dev/aura-tunes-ai-driven-mood-melodies" target="_blank"> Aura Tunes</a> — Mini project reflections.</li>
-        </ul>
-        <ul>
-            <li><a href="https://hleyasri.hashnode.dev/eagle-eye-aipowered-employee-misconduct-detection?t=1770095045391" target="_blank"> EagleEye AI</a> — Final year project in brief.</li>
-        </ul>
 
-    </section>
 
-    <section>
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:srileya22@gmail.com">srileya22@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/leyasri" target="_blank">github.com/leyasri</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/h-leyasri-8b0247264" target="_blank">
-            linkedin.com/in/h-leyasri-8b0247264</a></p>
-    </section>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Leya Sri. All rights reserved</p>
-    </footer>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="auratunes.png" alt="AuraTunes" class="project-img">
+      <h3>AuraTunes – AI driven Mood Melodies for emotion detection</h3>
+      <p>Smart music system using facial & voice recognition to suggest songs based on emotion.</p>
+      <div class="project-links">
+        <a href="https://github.com/Leyasri/Aura-Tunes-AI-driven-mood-melodies.git" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="eagleye.png" alt="EagleEye AI" class="project-img">
+      <h3>EagleEye AI – Intelligent System for Suspicious Activity Detection</h3>
+      <p>Real-time employee misconduct detection using YOLOv8 and computer vision.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Temperature, Humidity & Alcohol Monitoring</h3>
+      <p>IoT-based real-time monitoring system using sensors for smart living.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>SMS Spam Detection System</h3>
+      <p>AI system classifying messages as spam or non-spam using NLP techniques.</p>
+       <div class="project-links">
+        <a href="https://github.com/Leyasri/SMS-Spam-Detection-using-NLP.git" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section--alt">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <span class="chip">Python</span>
+      <span class="chip">C</span>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+    </div>
+    <div class="skill-group">
+      <h4>Tools & Frameworks</h4>
+      <span class="chip">Jupyter Notebook</span>
+      <span class="chip">Flask</span>
+      <span class="chip">Git</span>
+      <span class="chip">GitHub</span>
+      <span class="chip">Tableau</span>
+      <span class="chip">Power BI</span>
+    </div>
+    <div class="skill-group">
+      <h4>AI & ML</h4>
+      <span class="chip">Machine Learning</span>
+      <span class="chip">Deep Learning and computer vision</span>
+      <span class="chip">NLP and NLTK Libarries</span>
+      <span class="chip">Pandas,Numpy,Matplotlib</span>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS / CERTIFICATIONS -->
+<section id="awards" class="section">
+  <h2>Awards & Certifications</h2>
+  <div class="ach-grid">
+    <div class="ach-card">
+      <span class="ach-icon">🥇</span>
+      <h4>1st Consolation Prize</h4>
+      <p>State Level Project Competition-BIT</p>
+    </div>
+    <div class="ach-card">
+      <span class="ach-icon">🥈</span>
+      <h4>2nd Prize</h4>
+      <p>AIDEA Project Expo</p>
+    </div>
+    <div class="ach-card">
+      <span class="ach-icon">📜</span>
+      <h4>Certified</h4>
+      <p>MATLAB Onramp Courses</p>
+    </div>
+    <div class="ach-card">
+      <span class="ach-icon">📜</span>
+      <h4>Certified</h4>
+      <p>Introduction to Gen AI</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section--alt">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:srileya22@gmail.com">srileya22@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/leyasri" target="_blank">github.com/leyasri</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/h-leyasri-8b0247264" target="_blank">linkedin.com/in/h-leyasri</a></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 H Leyasri. All rights reserved.</p>
+</footer>
+
+<!-- JS for mobile nav toggle -->
+<script>
+const toggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+toggle.addEventListener('click', ()=> navLinks.classList.toggle('nav-open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=> navLinks.classList.remove('nav-open')));
+</script>
 
 </body>
 </html>
