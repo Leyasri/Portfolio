@@ -4,31 +4,62 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if(e.isIntersecting) e.target.classList.add('revealed');
   });
-}, {threshold:0.2});
+}, { threshold: 0.2 });
 sections.forEach(s => observer.observe(s));
+
 
 // Mobile Nav Toggle
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
-toggle.addEventListener('click', () => navLinks.classList.toggle('nav-open'));
+
+toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('nav-open');
+});
+
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('nav-open');
+  });
+});
+
 
 // Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e){
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
-    if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+    if(target){
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   });
 });
 
+
 // Animate Skill Bars on Scroll
 const skillBars = document.querySelectorAll('.bar-fill');
-const skillObserver = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
+const skillObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
     if(e.isIntersecting){
-      e.target.style.width = e.target.style.width; // width already in HTML inline
+      e.target.style.width = e.target.style.width;
       skillObserver.unobserve(e.target);
     }
   });
-},{threshold:0.5});
-skillBars.forEach(bar=>skillObserver.observe(bar));
+}, { threshold: 0.5 });
+skillBars.forEach(bar => skillObserver.observe(bar));
+
+
+// 🌙 Dark / Light Mode Toggle
+const themeToggle = document.getElementById('themeToggle');
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light');
+
+  if(document.body.classList.contains('light')){
+    themeToggle.textContent = '☀️';
+  } else {
+    themeToggle.textContent = '🌙';
+  }
+});

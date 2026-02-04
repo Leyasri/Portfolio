@@ -11,6 +11,17 @@ nav{position:fixed;top:0;width:100%;background: rgba(18,18,30,0.95);display:flex
 .nav-links a{padding:0.5rem;}
 .nav-toggle{display:none;font-size:1.5rem;background:none;border:none;color:#fff;cursor:pointer;}
 
+/* THEME TOGGLE */
+#themeToggle{
+  background:none;
+  border:1px solid #00d1ff;
+  color:#00d1ff;
+  padding:0.4rem 0.7rem;
+  border-radius:50%;
+  cursor:pointer;
+  margin-left:1rem;
+}
+
 /* HERO */
 .hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;padding:6rem 2rem;text-align:center;position:relative;}
 .hero-photo-wrapper{margin-top:1rem;}
@@ -62,6 +73,15 @@ nav{position:fixed;top:0;width:100%;background: rgba(18,18,30,0.95);display:flex
 
 /* FOOTER */
 footer{text-align:center;padding:1.5rem 2rem;background:rgba(18,18,30,0.95);margin-top:2rem;font-size:0.9rem;}
+
+/* LIGHT MODE */
+body.light{background: linear-gradient(135deg, #f5f5f5, #eaeaea); color:#111;}
+body.light nav, body.light footer{background:#ffffff;}
+body.light .project-card,
+body.light .timeline-item,
+body.light .ach-card{background:#ffffff;color:#111;}
+body.light .chip{background:#e0e0e0;}
+body.light a{color:#0066cc;}
 
 /* RESPONSIVE */
 @media(max-width:768px){

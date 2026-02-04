@@ -12,6 +12,7 @@
 <!-- NAV -->
 <nav>
   <span class="nav-logo">HL</span>
+
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
@@ -20,9 +21,10 @@
     <li><a href="#awards">Awards</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-</nav>
 
+  <button id="themeToggle">🌙</button>
+  <button class="nav-toggle">☰</button>
+</nav>
 <!-- HERO -->
 <header class="hero">
   <div class="hero-content">
@@ -195,12 +197,7 @@
 </footer>
 
 <!-- JS for mobile nav toggle -->
-<script>
-const toggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-toggle.addEventListener('click', ()=> navLinks.classList.toggle('nav-open'));
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=> navLinks.classList.remove('nav-open')));
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
